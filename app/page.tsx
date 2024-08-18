@@ -52,13 +52,13 @@ export default function Home() {
           <div>
             I fuse branding with digital product design, specializing in{" "}
             <span
-              className="relative group underline text-primary cursor-pointer sm:text-secondary sm:decoration-transparent"
+              className="relative group underline text-primary cursor-pointer sm:text-secondary sm:no-underline"
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
             >
               Animations
               <div
-                className="absolute z-10 w-[420px] right-[-16px] cursor-default sm:invisible pointer-events-none"
+                className="absolute z-10 w-[420px] right-[-16px] cursor-default sm:hidden pointer-events-none"
                 onMouseEnter={() => setIsHovering(false)}
                 onMouseLeave={() => setIsHovering(false)}
               >
@@ -78,7 +78,7 @@ export default function Home() {
                     autoPlay
                     muted
                     loop
-                    className="video w-full h-full object-cover rounded-lg"
+                    className="video w-full h-full object-cover rounded-lg sm:hidden"
                   />
                 </motion.div>
               </div>
