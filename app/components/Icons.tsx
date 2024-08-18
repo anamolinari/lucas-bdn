@@ -70,7 +70,10 @@ export function IconMail() {
 
 export function IconTheme() {
   return (
-    <div className="fill-line stroke-secondary opacity-50 hover:fill-secondary hover:stroke-border hover:opacity-100 transition-all duration-500 ease-out">
+    <div
+      className="fill-line stroke-secondary opacity-50 hover:fill-secondary hover:stroke-line hover:opacity-100 transition-all duration-500 ease-out
+    sm:hover:fill-line sm:hover:stroke-secondary sm:hover:opacity-50"
+    >
       <svg
         width="24"
         height="24"
