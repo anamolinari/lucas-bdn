@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Divider } from "./components/Divider";
@@ -14,6 +14,16 @@ import TellusCover from "../public/assets/tellus/img-tellus-cover.png";
 
 export default function Home() {
   const [isHovering, setIsHovering] = useState(false);
+  const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShouldLoadVideo(window.innerWidth > 550);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className="flex flex-col text-base text-secondary">
@@ -57,31 +67,35 @@ export default function Home() {
               onMouseLeave={() => setIsHovering(false)}
             >
               Animations
-              <div
-                className="absolute z-10 w-[420px] right-[-16px] cursor-default sm:hidden pointer-events-none"
-                onMouseEnter={() => setIsHovering(false)}
-                onMouseLeave={() => setIsHovering(false)}
-              >
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={isHovering ? { opacity: 1, scale: 1 } : {}}
-                  transition={{
-                    type: "spring",
-                    mass: 1,
-                    stiffness: 1200,
-                    damping: 40,
-                  }}
-                  className="origin-top-right"
+              {shouldLoadVideo && (
+                <div
+                  className="absolute z-10 w-[420px] right-[-16px] cursor-default pointer-events-none hidden sm:block"
+                  onMouseEnter={() => setIsHovering(false)}
+                  onMouseLeave={() => setIsHovering(false)}
                 >
-                  <video
-                    src="/animations.mp4"
-                    autoPlay
-                    muted
-                    loop
-                    className="video w-full h-full object-cover rounded-lg sm:hidden"
-                  />
-                </motion.div>
-              </div>
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={isHovering ? { opacity: 1, scale: 1 } : {}}
+                    transition={{
+                      type: "spring",
+                      mass: 1,
+                      stiffness: 1200,
+                      damping: 40,
+                    }}
+                    className="origin-top-right"
+                  >
+                    <video
+                      key={shouldLoadVideo ? "loaded" : "unloaded"}
+                      src="/animations.mp4"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      className="video w-full h-full object-cover rounded-lg"
+                    />
+                  </motion.div>
+                </div>
+              )}
             </span>{" "}
             and Design Ops. My work spans from startups to big companies,
             offering a rich perspective on diverse design needs.
@@ -137,16 +151,3 @@ export default function Home() {
     </div>
   );
 }
-
-/*
-<span
-              className="photo absolute bottom-[10%] left-[-10%] z-[1] flex items-center justify-center
-            w-[93px] h-6 gap-1 text-xs leading-4 tracking-wide text-primary whitespace-nowrap bg-card
-            border rounded-full opacity-0 invisible transition-all duration-200 ease"
-            >
-              My Photos
-              <span className="rotate=20">
-                <IconArrow />
-              </span>
-            </span>
-    */
