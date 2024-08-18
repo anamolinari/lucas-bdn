@@ -69,7 +69,7 @@ export default function Home() {
               Animations
               {shouldLoadVideo && (
                 <div
-                  className="absolute z-10 w-[420px] right-[-16px] cursor-default pointer-events-none hidden sm:block"
+                  className="absolute z-10 w-[420px] right-[-16px] cursor-default pointer-events-none sm:block"
                   onMouseEnter={() => setIsHovering(false)}
                   onMouseLeave={() => setIsHovering(false)}
                 >
