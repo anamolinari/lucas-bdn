@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        "sm": { max: "550px" },
+        sm: { max: "550px" },
       },
       rotate: {
         "20": "20deg",
@@ -44,14 +44,14 @@ const config: Config = {
         button: "var(--button-color)",
         card: "var(--card-color)",
         subtle: "var(--subtle-color)",
-        border: "var(--border-color)",
+        line: "var(--line-color)",
         dark: {
           primary: "var(--primary-color)",
           secondary: "var(--secondary-color)",
           background: "var(--background-color)",
           card: "var(--card-color)",
           subtle: "var(--subtle-color)",
-          border: "var(--border-color)",
+          line: "var(--line-color)",
         },
       },
     },

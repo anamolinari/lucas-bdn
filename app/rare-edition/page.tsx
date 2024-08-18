@@ -190,7 +190,7 @@ export default function RareEdition() {
 
       <PageFooter
         company="Rare Edition"
-        url="#"
+        url="https://www.rareedition.com/"
         year="2021-2022"
         list={[
           "Brand Identity",

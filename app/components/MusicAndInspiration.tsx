@@ -9,6 +9,7 @@ interface ItemProps {
   image: string;
   name: string;
   text: string;
+  imageRounded?: string;
 }
 
 interface MusicAndInspirationProps {
@@ -16,7 +17,13 @@ interface MusicAndInspirationProps {
   items: ItemProps[];
 }
 
-export function Item({ url, image, name, text }: ItemProps) {
+export function Item({
+  url,
+  image,
+  name,
+  text,
+  imageRounded = "rounded-[8px]",
+}: ItemProps) {
   return (
     <div className="music-item">
       <a
@@ -31,7 +38,7 @@ export function Item({ url, image, name, text }: ItemProps) {
             alt={name}
             width={48}
             height={48}
-            className="transition-all duration-500 ease"
+            className={`transition-transform duration-500 ease border-[0.75px] border-line ${imageRounded}`}
           />
           <div className="text-xs leading-4 tracking-wide w-[115px]">
             <p className="text-primary whitespace-nowrap truncate text-ellipsis">
@@ -58,6 +65,7 @@ function renderItems(items: ItemProps[]) {
       image={item.image}
       name={item.name}
       text={item.text}
+      imageRounded={item.imageRounded}
     />
   ));
 }
@@ -68,7 +76,7 @@ export function MusicAndInspiration({
 }: MusicAndInspirationProps) {
   return (
     <>
-      <div className="flex sm:flex-col items-start justify-between my-10 gap-6 border-b pb-10">
+      <div className="flex sm:flex-col items-start justify-between my-10 gap-6 pb-10 border-b-[0.75px] border-line">
         <h3 className="w-[130px] text-sm leading-5 text-secondary">{title}</h3>
         <div className="grid grid-cols-2 gap-4 sm:flex sm:flex-col sm:w-full">
           {renderItems(items)}

@@ -98,7 +98,7 @@ export default function LuxuryCard() {
 
       <PageFooter
         company="Luxury Card"
-        url="#"
+        url="https://www.luxurycard.com/"
         year="2018-2019"
         list={[
           "UX Analysis",

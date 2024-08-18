@@ -133,7 +133,7 @@ export default function Tellus() {
 
       <PageFooter
         company="Tellus App"
-        url="#"
+        url="https://www.tellusapp.com/"
         year="2022-2023"
         list={[
           "Research",

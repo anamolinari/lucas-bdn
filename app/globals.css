@@ -19,7 +19,7 @@
   --button-color: #1d1f1e;
   --card-color: #f8f7f3;
   --subtle-color: #e9e7e2;
-  --border-color: #d7d7d3;
+  --line-color: #d7d7d3;
 }
 
 .dark {
@@ -32,7 +32,7 @@
   --button-color: #efeeeb;
   --card-color: #2c2b2a;
   --subtle-color: #2c2b2a;
-  --border-color: #41403f;
+  --line-color: #41403f;
 }
 
 * {
@@ -98,7 +98,7 @@ body {
 
 /* PAGE: ABOUT / HOVER DO COMPONENT MUSIC AND INSPIRATION */
 .music-item:hover img {
-  scale: 1.1;
+  transform: scale(1.1);
 }
 
 .music-item:hover p {

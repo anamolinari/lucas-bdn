@@ -16,6 +16,7 @@ interface MusicAndInspirationItem {
   name: string;
   text: string;
   url: string;
+  imageRounded?: string;
 }
 
 const experiences: Experience[] = [
@@ -96,12 +97,14 @@ const inspirations: MusicAndInspirationItem[] = [
     name: "ERYC",
     text: "Design Engineer",
     url: "https://eryc.cc/lab/",
+    imageRounded: "rounded-full",
   },
   {
     image: "/assets/music-inspiration/people-ya.png",
     name: "Yã Izidoro",
     text: "Visual Designer",
     url: "https://yaizidoro.framer.ai/",
+    imageRounded: "rounded-full",
   },
 
   /*
@@ -110,6 +113,7 @@ const inspirations: MusicAndInspirationItem[] = [
     name: "Ana Molinari",
     text: "Software Engineer",
     url: "",
+    imageRounded: "rounded-full",
   },*/
 ];
 

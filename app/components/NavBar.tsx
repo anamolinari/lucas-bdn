@@ -26,7 +26,7 @@ const NavBarLink: FC<NavBarLinkProps> = ({
     </div>
     <span
       className="tooltip absolute left-1/2 bottom-[125%] transform translate-x-[-50%] translate-y-[10px] invisible opacity-0
-    p-2 bg-primary text-xs leading-4 tracking-wide text-border rounded-md whitespace-nowrap transition-all duration-500 ease-out sm:hidden"
+    p-2 bg-primary text-xs leading-4 tracking-wide text-line rounded-md whitespace-nowrap transition-all duration-500 ease-out sm:hidden"
     >
       {label}
     </span>
@@ -40,7 +40,7 @@ export function NavBar() {
   return (
     <div
       className="fixed bottom-0 left-1/2 z-50 transform translate-x-[-50%] translate-y-[-50%] flex items-center justify-center gap-4
-      py-4 px-6 bg-card border border-solid border-border rounded-xl"
+      py-4 px-6 bg-card border border-solid border-line rounded-xl"
     >
       <NavBarLink
         href="/"

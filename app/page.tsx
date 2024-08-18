@@ -24,9 +24,10 @@ export default function Home() {
             <span className="hidden sm:inline">Spain.</span>
           </p>
           <a
-            href="https://www.instagram.com/lucasbordignon/"
+            href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDc4MTM3MTM0NDMyMzEx/?igsh=ZGl4cmZlOHJ3Z3Nw"
             target="_blank"
             className="photo relative flex items-center gap-1"
+            rel="noopener noreferrer"
           >
             <Image
               src={spain}
@@ -37,7 +38,7 @@ export default function Home() {
             <span
               className="photo absolute bottom-[10%] left-[-10%] z-[1] flex items-center justify-center
             w-[93px] h-6 gap-1 text-xs leading-4 tracking-wide text-primary whitespace-nowrap bg-card
-            border rounded-full opacity-0 invisible transition-all duration-200 ease sm:hidden"
+            border border-line rounded-full opacity-0 invisible transition-all duration-200 ease sm:hidden"
             >
               My Photos
               <span className="rotate=20">
