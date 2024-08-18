@@ -69,7 +69,7 @@ export function NavBar() {
         <IconTheme />
         <span
           className="tooltip absolute left-1/2 bottom-[125%] transform translate-x-[-50%] translate-y-[10px] invisible opacity-0
-          p-2 bg-primary text-xs leading-4 tracking-wide text-border rounded-md whitespace-nowrap transition-all duration-500 ease-out sm:hidden"
+          p-2 bg-primary text-xs leading-4 tracking-wide text-line rounded-md whitespace-nowrap transition-all duration-500 ease-out sm:hidden"
         >
           Switch Theme
         </span>

@@ -25,12 +25,15 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     // Verifica o tema armazenado no localStorage ou define como 'light' por padrão
-    const storedTheme = localStorage.getItem("theme") || "light";
-    const prefersDarkMode = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    const initialTheme = storedTheme || (prefersDarkMode ? "dark" : "light");
-    setTheme(initialTheme);
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+      setTheme(storedTheme);
+    } else {
+      const prefersDarkMode = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      setTheme(prefersDarkMode ? "dark" : "light");
+    }
   }, []);
 
   useEffect(() => {
@@ -41,15 +44,12 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
       document.documentElement.classList.remove("dark");
     }
     // Armazena o tema selecionado no localStorage
+
     localStorage.setItem("theme", theme);
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme((prev) => {
-      const newTheme = prev === "dark" ? "light" : "dark";
-      console.log("Toggling theme to:", newTheme); // Adicione este log
-      return newTheme;
-    });
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   };
 
   return (
