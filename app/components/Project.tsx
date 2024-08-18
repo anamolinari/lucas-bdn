@@ -1,5 +1,6 @@
 import * as AspectRatio from "@radix-ui/react-aspect-ratio";
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 import { IconArrow } from "./Icons";
 
@@ -14,7 +15,7 @@ interface ProjectProps {
 
 export function Project({ title, text, img, alt, link }: ProjectProps) {
   return (
-    <a href={link} target="_blank" rel="noopener noreferrer" aria-label={title}>
+    <Link href={link} aria-label={title}>
       <div className="project relative flex sm:flex-col sm:gap-4 items-start sm:items-center justify-between gap-1 cursor-pointer">
         <div className="flex flex-col items-start justify-start w-[184px] sm:w-full">
           <div className="flex flex-row items-center gap-2">
@@ -41,6 +42,6 @@ export function Project({ title, text, img, alt, link }: ProjectProps) {
           </AspectRatio.Root>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
