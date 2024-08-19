@@ -1,5 +1,5 @@
 const getIconClasses = (active: boolean) => `
-  transition-all duration-500 ease-out block w-6 h-6 relative overflow-hidden
+  transition-all duration-300 ease-out block w-6 h-6 relative overflow-hidden
   ${active ? "fill-primary opacity-100" : "opacity-30"}
   hover:fill-primary hover:opacity-100
 `;
@@ -50,7 +50,7 @@ export function IconAbout({ active }: IconProps) {
 
 export function IconMail() {
   return (
-    <div className="relative block w-6 h-6 overflow-hidden fill-primary opacity-30 hover:fill-primary hover:opacity-100 transition-all duration-500 ease-out">
+    <div className="relative block w-6 h-6 overflow-hidden fill-primary opacity-30 hover:fill-primary hover:opacity-100 transition-all duration-300 ease-out">
       <svg
         width="24"
         height="24"
@@ -71,7 +71,7 @@ export function IconMail() {
 export function IconTheme() {
   return (
     <div
-      className="fill-line stroke-secondary opacity-50 hover:fill-secondary hover:stroke-line hover:opacity-100 transition-all duration-500 ease-out
+      className="fill-line stroke-secondary opacity-50 hover:fill-secondary hover:stroke-line hover:opacity-100 transition-all duration-300 ease-out
     sm:hover:fill-line sm:hover:stroke-secondary sm:hover:opacity-50"
     >
       <svg

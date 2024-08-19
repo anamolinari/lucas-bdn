@@ -1,3 +1,5 @@
+"use client";
+
 import * as AspectRatio from "@radix-ui/react-aspect-ratio";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
@@ -19,14 +21,14 @@ export function Project({ title, text, img, alt, link }: ProjectProps) {
       <div className="project relative flex sm:flex-col sm:gap-4 items-start sm:items-center justify-between gap-1 cursor-pointer">
         <div className="flex flex-col items-start justify-start w-[184px] sm:w-full">
           <div className="flex flex-row items-center gap-2">
-            <h3 className="title text-sm leading-5 text-primary transition-all duration-500 ease">
+            <h3 className="title text-sm leading-5 text-primary transition-all duration-300 ease">
               {title}
             </h3>
-            <span className="icon opacity-0 transition-all duration-500 ease">
+            <span className="icon opacity-0 transition-color duration-300 ease">
               <IconArrow />
             </span>
           </div>
-          <p className="description text-sm leading-5 mt-2 transition-all duration-500 ease">
+          <p className="description text-sm leading-5 mt-2 transition-color duration-300 ease">
             {text}
           </p>
         </div>
@@ -36,7 +38,7 @@ export function Project({ title, text, img, alt, link }: ProjectProps) {
             <Image
               src={img}
               alt={alt}
-              className="img rounded-xl transition-all duration-500 ease inset-0 object-cover"
+              className="img rounded-xl transition-transform duration-300 ease inset-0 object-cover"
               layout="fill"
             />
           </AspectRatio.Root>

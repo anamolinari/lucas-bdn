@@ -1,3 +1,5 @@
+import { FadeInWhenVisible } from "./FadeInWhenVisible";
+
 interface ContentSectionProps {
   title: string;
   children: React.ReactNode;

@@ -8,7 +8,7 @@ type ExperienceType = {
 export function Experience({ experiences }: { experiences: ExperienceType[] }) {
   return (
     <section
-      className="flex flex-row sm:flex-col gap-6 py-10 mt-10 text-sm leading-5 text-secondary border-t-[0.75px] border-line"
+      className="flex flex-row sm:flex-col gap-6 py-10 mt-10 text-sm leading-5 text-secondary border-y-[0.75px] border-line"
       aria-labelledby="experience-title"
     >
       <h3 id="experience-title" className="flex-shrink-0 w-[135px]">

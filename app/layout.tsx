@@ -1,10 +1,10 @@
 import React, { ReactNode } from "react";
-
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { NavBar } from "./components/NavBar";
 import { ThemeProvider } from "./context/ThemeContext";
 import "./globals.css";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 interface LayoutProps {
   children: ReactNode;
@@ -21,6 +21,7 @@ export default function Layout({ children }: LayoutProps) {
         <ThemeProvider>
           <Header />
           <NavBar />
+          <ScrollToTop />
           <main>{children}</main>
           <Footer />
         </ThemeProvider>

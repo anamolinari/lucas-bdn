@@ -1,8 +1,10 @@
+"use client";
 import Image from "next/image";
 
 import ImgAbout from "../../public/assets/images/about.png";
 import { Experience } from "../components/Experience";
 import { MusicAndInspiration } from "../components/MusicAndInspiration";
+import { FadeInWhenVisible } from "../components/FadeInWhenVisible";
 
 interface Experience {
   id: number;
@@ -120,56 +122,74 @@ const inspirations: MusicAndInspirationItem[] = [
 export default function About() {
   return (
     <div>
-      <section className="flex flex-col gap-6">
-        <h2 className="mt-10 text-base leading-6 text-primary">About me</h2>
-        <div className="text-sm leading-5 text-secondary space-y-2">
-          <div>
-            A lifelong fascination with technology and its potential to improve
-            our lives sparked my journey into design. Hailing from south Brazil,
-            I grew up alongside the ever-evolving landscape of tech, constantly
-            curious about its impact on the way we interact with the world.{" "}
+      <FadeInWhenVisible delay={0}>
+        <section className="flex flex-col gap-6">
+          <h2 className="mt-10 text-base leading-6 text-primary">About me</h2>
+          <div className="text-sm leading-5 text-secondary space-y-2">
+            <div>
+              A lifelong fascination with technology and its potential to
+              improve our lives sparked my journey into design. Hailing from
+              south Brazil, I grew up alongside the ever-evolving landscape of
+              tech, constantly curious about its impact on the way we interact
+              with the world.{" "}
+            </div>
+            <div>
+              This curiosity led me to explore the world of design. Fueled by a
+              desire to bridge the gap between ideas and their tangible
+              expressions, I was constantly pursuing ways to bring my ideas to
+              the real world and have real people using it.{" "}
+            </div>
+            <div>
+              Since 2022 I'm at Utility Agency, working on Web and Mobile
+              projects. I'm always involved in side projects that fuel my
+              interest in software development, arts and sports.{" "}
+            </div>
           </div>
-          <div>
-            This curiosity led me to explore the world of design. Fueled by a
-            desire to bridge the gap between ideas and their tangible
-            expressions, I was constantly pursuing ways to bring my ideas to the
-            real world and have real people using it.{" "}
-          </div>
-          <div>
-            Since 2022 I'm at Utility Agency, working on Web and Mobile
-            projects. I'm always involved in side projects that fuel my interest
-            in software development, arts and sports.{" "}
-          </div>
-        </div>
-        <Image
-          className="rounded-xl"
-          src={ImgAbout}
-          alt="Lucas Bordignon"
-          width={540}
-          height={360}
-          priority
-        />
-      </section>
-      <Experience experiences={experiences} />
-      <MusicAndInspiration title="On repeat" items={musics} />
-      <MusicAndInspiration title="Inspiration" items={inspirations} />
-      <section className="flex items-start gap-6 mb-10 sm:flex-col sm:gap-4">
-        <h3 className="w-[130px] text-sm leading-5 tracking-wide text-secondary">
-          Let's chat
-        </h3>
-        <p className="flex-1 text-sm leading-5 tracking-wide">
-          Do you have an idea or a project and want to collaborate?{" "}
-          <a
-            className="cursor-pointer underline hover:text-blue transition-colors duration-500 ease"
-            href="mailto:l.bordignon0@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Send me a message
-          </a>
-          , and we'll take it from there!
-        </p>
-      </section>
+
+          <FadeInWhenVisible delay={0.2}>
+            <Image
+              className="rounded-xl"
+              src={ImgAbout}
+              alt="Lucas Bordignon"
+              width={540}
+              height={360}
+              priority
+            />
+          </FadeInWhenVisible>
+        </section>
+      </FadeInWhenVisible>
+
+      <FadeInWhenVisible delay={0.4}>
+        <Experience experiences={experiences} />
+      </FadeInWhenVisible>
+
+      <FadeInWhenVisible delay={0.6}>
+        <MusicAndInspiration title="On repeat" items={musics} />
+      </FadeInWhenVisible>
+
+      <FadeInWhenVisible delay={0.8}>
+        <MusicAndInspiration title="Inspiration" items={inspirations} />
+      </FadeInWhenVisible>
+
+      <FadeInWhenVisible delay={1}>
+        <section className="flex items-start gap-6 mb-10 sm:flex-col sm:gap-4">
+          <h3 className="w-[130px] text-sm leading-5 tracking-wide text-secondary">
+            Let's chat
+          </h3>
+          <p className="flex-1 text-sm leading-5 tracking-wide">
+            Do you have an idea or a project and want to collaborate?{" "}
+            <a
+              className="cursor-pointer underline hover:text-blue transition-colors duration-300 ease"
+              href="mailto:l.bordignon0@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Send me a message
+            </a>
+            , and we'll take it from there!
+          </p>
+        </section>
+      </FadeInWhenVisible>
     </div>
   );
 }

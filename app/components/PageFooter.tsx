@@ -20,12 +20,12 @@ export function PageFooter({ company, url, year, list }: PageFooterProps) {
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            className={`${textClass} underline hover:text-blue transition-colors duration-500 ease`}
+            className={`${textClass} underline hover:text-blue transition-colors duration-300 ease`}
             aria-label={`Visit ${company} website`}
           >
             {company}
           </a>
-          <span className="transition-colors duration-500 ease">
+          <span className="transition-all duration-300 ease">
             <IconArrow />
           </span>
         </div>

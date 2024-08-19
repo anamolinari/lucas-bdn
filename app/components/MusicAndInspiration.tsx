@@ -38,18 +38,18 @@ export function Item({
             alt={name}
             width={48}
             height={48}
-            className={`transition-transform duration-500 ease border-[0.75px] border-line ${imageRounded}`}
+            className={`transition-transform duration-300 ease border-[0.75px] border-line ${imageRounded}`}
           />
           <div className="text-xs leading-4 tracking-wide w-[115px]">
             <p className="text-primary whitespace-nowrap truncate text-ellipsis">
               {name}
             </p>
-            <p className="whitespace-nowrap truncate text-ellipsis transition-all duration-500 ease">
+            <p className="whitespace-nowrap truncate text-ellipsis transition-all duration-300 ease">
               {text}
             </p>
           </div>
         </div>
-        <span className="transition-all duration-500 ease">
+        <span className="transition-all duration-300 ease">
           <IconArrow />
         </span>
       </a>
