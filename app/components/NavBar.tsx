@@ -21,12 +21,12 @@ const NavBarLink: FC<NavBarLinkProps> = ({
   label,
 }) => (
   <Link href={href} className="relative inline-block" aria-label={label}>
-    <div className={`transition-all duration-500 ease-out`}>
+    <div className={`transition-all duration-300 ease-out`}>
       <Icon active={active} />
     </div>
     <span
       className="tooltip absolute left-1/2 bottom-[125%] transform translate-x-[-50%] translate-y-[10px] invisible opacity-0
-    p-2 bg-primary text-xs leading-4 tracking-wide text-line rounded-md whitespace-nowrap transition-all duration-500 ease-out sm:hidden"
+    p-2 bg-primary text-xs leading-4 tracking-wide text-line rounded-md whitespace-nowrap transition-all duration-300 ease-out sm:hidden"
     >
       {label}
     </span>
