@@ -17,7 +17,7 @@ const SocialMediaData: SocialMediaProps[] = [
   },
   {
     text: "Find me on",
-    url: "https://x.com/i/flow/login?redirect_after_login=%2FLucas_bordignon",
+    url: "https://x.com/Lucas_bordignon",
     icon: <TwitterIcon />,
     name: "Twitter/X",
   },
