@@ -63,44 +63,57 @@ export default function Home() {
           <div>
             <div>
               I fuse branding with digital product design, specializing in{" "}
-              <span
-                className="relative group underline text-primary cursor-pointer sm:text-secondary sm:no-underline"
-                onMouseEnter={() => setIsHovering(true)}
-                onMouseLeave={() => setIsHovering(false)}
+              <a
+                href="https://x.com/Lucas_bordignon/status/1826023966097682510"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="sm:pointer-events-none"
               >
-                Animations
-                {shouldLoadVideo && (
-                  <div
-                    className="absolute z-10 w-[420px] right-[-16px] cursor-default pointer-events-none sm:block"
-                    onMouseEnter={() => setIsHovering(false)}
-                    onMouseLeave={() => setIsHovering(false)}
-                  >
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      animate={isHovering ? { opacity: 1, scale: 1 } : {}}
-                      transition={{
-                        type: "spring",
-                        mass: 1,
-                        stiffness: 1200,
-                        damping: 40,
-                      }}
-                      className="origin-top-right"
+                <span
+                  className="relative group underline text-primary hover:text-blue cursor-pointer sm:text-secondary sm:no-underline"
+                  onMouseEnter={() => setIsHovering(true)}
+                  onMouseLeave={() => setIsHovering(false)}
+                >
+                  Animations
+                  {shouldLoadVideo && (
+                    <div
+                      className="absolute z-10 w-[420px] right-[-16px] cursor-default pointer-events-none sm:block"
+                      onMouseEnter={() => setIsHovering(false)}
+                      onMouseLeave={() => setIsHovering(false)}
                     >
-                      <video
-                        key={shouldLoadVideo ? "loaded" : "unloaded"}
-                        src="/animations.mp4"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        className="video w-full h-full object-cover rounded-lg"
-                      />
-                    </motion.div>
-                  </div>
-                )}
+                      <motion.div
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={isHovering ? { opacity: 1, scale: 1 } : {}}
+                        transition={{
+                          type: "spring",
+                          mass: 1,
+                          stiffness: 1200,
+                          damping: 40,
+                        }}
+                        className="origin-top-right"
+                      >
+                        <video
+                          key={shouldLoadVideo ? "loaded" : "unloaded"}
+                          src="/animations.mp4"
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                          className="video w-full h-full object-cover rounded-lg"
+                        />
+                      </motion.div>
+                    </div>
+                  )}
+                </span>
+              </a>{" "}
+              ,{" "}
+              <span className="text-primary sm:text-secondary">
+                Design Engineer
               </span>{" "}
-              and Design Ops. My work spans from startups to big companies,
-              offering a rich perspective on diverse design needs.
+              and{" "}
+              <span className="text-primary sm:text-secondary">Design Ops</span>
+              . My work spans from startups to big companies, offering a rich
+              perspective on diverse design needs.
             </div>
           </div>
 
