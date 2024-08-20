@@ -49,7 +49,7 @@ export function NavBar() {
 
   return (
     <div
-      className="fixed bottom-[24px] sm:bottom-[-20px] left-1/2 z-50 transform translate-x-[-50%] flex items-center justify-center gap-4
+      className="fixed bottom-[24px] sm:bottom-[20px] left-1/2 z-50 transform translate-x-[-50%] flex items-center justify-center gap-4
       py-4 px-6 bg-card border border-solid border-line rounded-xl"
     >
       <NavBarLink
