@@ -32,9 +32,9 @@ const SocialMediaData: SocialMediaProps[] = [
 export function SocialMedia() {
   return (
     <div>
-      {SocialMediaData.map((social, index) => (
+      {SocialMediaData.map((social) => (
         <div
-          key={index}
+          key={social.name}
           className="flex items-center gap-1 mb-10 text-sm leading-5 hover:text-primary transition-all duration-300 ease"
         >
           <p>{social.text}</p>

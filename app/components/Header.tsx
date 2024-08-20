@@ -1,23 +1,25 @@
 "use client";
-
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import dotIcon from "../../public/assets/icons/icon-dot-green.svg";
 import profileImg from "../../public/assets/images/profile.png";
 
+const routeTitles: Record<string, string> = {
+  "/": "Product Designer",
+  "/about": "About",
+  "/tellus": "Project",
+  "/global-sonic": "Project",
+  "/rare-edition": "Project",
+  "/luxury-card": "Project",
+};
+
+function getTitle(pathname: string): string {
+  return routeTitles[pathname] || "Product Designer";
+}
+
 export default function Header() {
   const pathname = usePathname();
-
-  const getTitle = () => {
-    if (pathname === "/") return "Product Designer";
-    if (pathname === "/about") return "About";
-    if (pathname === "/tellus") return "Project";
-    if (pathname === "/global-sonic") return "Project";
-    if (pathname === "/rare-edition") return "Project";
-    if (pathname === "/luxury-card") return "Project";
-    return "Product Designer";
-  };
 
   return (
     <header
@@ -36,7 +38,7 @@ export default function Header() {
 
       <div className="flex items-center gap-2">
         <p className="text-xs leading-4 font-semibold text-secondary tracking-wide sm:hidden">
-          {getTitle()}
+          {getTitle(pathname)}
         </p>
         <Image
           src={dotIcon}

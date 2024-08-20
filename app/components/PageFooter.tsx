@@ -38,9 +38,9 @@ export function PageFooter({ company, url, year, list }: PageFooterProps) {
 
       <div className="flex items-start gap-6">
         <span className={labelClass}>Services</span>
-        <ul className="flex flex-col gap-3">
+        <ul className="flex flex-col gap-3" aria-label="List of services">
           {list.map((item, index) => (
-            <li key={index} className={textClass}>
+            <li key={`${item}-${index}`} className={textClass}>
               {item}
             </li>
           ))}

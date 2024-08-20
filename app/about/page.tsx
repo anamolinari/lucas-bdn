@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import ImgAbout from "../../public/assets/images/about.png";
 import { Experience } from "../components/Experience";
+import { PageImage } from "../components/PageImage";
 import { MusicAndInspiration } from "../components/MusicAndInspiration";
 import { FadeInWhenVisible } from "../components/FadeInWhenVisible";
 
@@ -146,16 +147,7 @@ export default function About() {
             </div>
           </div>
 
-          <FadeInWhenVisible delay={0.2}>
-            <Image
-              className="rounded-xl"
-              src={ImgAbout}
-              alt="Lucas Bordignon"
-              width={540}
-              height={360}
-              priority
-            />
-          </FadeInWhenVisible>
+          <PageImage image={ImgAbout} alt="Lucas Bordignon" />
         </section>
       </FadeInWhenVisible>
 

@@ -5,7 +5,11 @@ type ExperienceType = {
   company: string;
 };
 
-export function Experience({ experiences }: { experiences: ExperienceType[] }) {
+interface ExperienceProps {
+  experiences: ExperienceType[];
+}
+
+export function Experience({ experiences }: ExperienceProps) {
   return (
     <section
       className="flex flex-row sm:flex-col gap-6 py-10 mt-10 text-sm leading-5 text-secondary border-y-[0.75px] border-line"
@@ -17,10 +21,10 @@ export function Experience({ experiences }: { experiences: ExperienceType[] }) {
       <ul className="flex flex-col space-y-4 flex-grow">
         {experiences.map((exp) => (
           <li key={exp.id} className="flex flex-col gap-1">
-            <div className="flex items-center justify-between">
+            <article className="flex items-center justify-between">
               <strong className="text-primary">{exp.position}</strong>
               <p className="mr-3">{exp.period}</p>
-            </div>
+            </article>
             <span>{exp.company}</span>
           </li>
         ))}

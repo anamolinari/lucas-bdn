@@ -14,6 +14,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <head>
+        <meta name="pinterest" content="nopin" />
         <title>Lucas Bordignon</title>
         <link rel="icon" href="/assets/images/profile.png" type="image/png" />
       </head>
