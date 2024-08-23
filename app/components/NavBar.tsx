@@ -4,7 +4,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FC, useMemo } from "react";
 
-import { IconAbout, IconHome, IconMail, IconProps, IconTheme } from "./Icons";
+import {
+  IconAbout,
+  IconHome,
+  IconMail,
+  IconPlayground,
+  IconProps,
+  IconTheme,
+} from "./Icons";
 import { useTheme } from "../context/ThemeContext";
 
 interface NavBarLinkProps {
@@ -26,7 +33,9 @@ const NavBarLink: FC<NavBarLinkProps> = ({
   label,
 }) => (
   <Link href={href} className="relative inline-block" aria-label={label}>
-    <div className={`transition-all duration-300 ease-out`}>
+    <div
+      className={`p-2 rounded-lg transition-all duration-300 ease-out ${active ? "bg-background" : "hover:bg-transparent"}`}
+    >
       <Icon active={active} />
     </div>
     <span className={tooltipClasses} aria-hidden="true">
@@ -43,14 +52,15 @@ export function NavBar() {
     () => ({
       home: pathname === "/",
       about: pathname === "/about",
+      playground: pathname === "/playground",
     }),
     [pathname]
   );
 
   return (
     <div
-      className="fixed bottom-[24px] sm:bottom-[20px] left-1/2 z-50 transform translate-x-[-50%] flex items-center justify-center gap-4
-      py-4 px-6 bg-card border border-solid border-line rounded-xl"
+      className="fixed bottom-[24px] sm:bottom-[20px] left-1/2 z-50 transform translate-x-[-50%] flex items-center justify-center
+      p-1 bg-card border border-solid border-line rounded-xl"
     >
       <NavBarLink
         href="/"
@@ -73,7 +83,7 @@ export function NavBar() {
 
       <button
         onClick={toggleTheme}
-        className="relative"
+        className="relative p-2"
         aria-label="Switch Theme"
       >
         <IconTheme />
