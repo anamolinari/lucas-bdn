@@ -75,6 +75,12 @@ export function NavBar() {
         label="About"
       />
       <NavBarLink
+        href="/playground"
+        icon={IconPlayground}
+        active={isActive.playground}
+        label="Playground"
+      />
+      <NavBarLink
         href="mailto:l.bordignon0@gmail.com"
         icon={IconMail}
         active={false}

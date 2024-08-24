@@ -26,15 +26,17 @@ export default function Header() {
       className="flex z-50 items-center justify-between pt-14 pb-6"
       aria-label="Website header"
     >
-      <div className="flex items-center gap-2">
-        <Image
-          src={profileImg}
-          alt="Lucas profile picture"
-          className="w-10 h-10 rounded-full"
-          priority
-        />
-        <h1 className="left-6 text-base font-semibold">Lucas Bordignon</h1>
-      </div>
+      <a href="/">
+        <div className="flex items-center gap-2">
+          <Image
+            src={profileImg}
+            alt="Lucas profile picture"
+            className="w-10 h-10 rounded-full"
+            priority
+          />
+          <h1 className="left-6 text-base font-semibold">Lucas Bordignon</h1>
+        </div>
+      </a>
 
       <div className="flex items-center gap-2">
         <p className="text-xs leading-4 font-semibold text-secondary tracking-wide sm:hidden">

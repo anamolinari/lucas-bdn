@@ -2,7 +2,7 @@
 
 export default function LocationCard() {
   return (
-    <div className="relative overflow-hidden w-[320px] h-[80px] cursor-pointer ring-1 ring-black/10 rounded-[20px] transition-all duration-300 ease-in-out group transform-gpu hover:shadow-[0px_16px_40px_-12px_rgba(0,0,0,0.40),0px_8px_16px_-4px_rgba(0,0,0,0.04),0px_2px_4px_0px_rgba(0,0,0,0.08);]">
+    <div className="relative overflow-hidden w-[320px] h-[80px] cursor-pointer ring-1 ring-black/10 rounded-[20px] transition-all duration-500 ease-in-out group transform-gpu hover:shadow-[0px_16px_40px_-12px_rgba(0,0,0,0.40),0px_8px_16px_-4px_rgba(0,0,0,0.04),0px_2px_4px_0px_rgba(0,0,0,0.08);]">
       <div className="absolute z-30 flex flex-col gap-1 h-full w-full justify-center px-4 ">
         <div className="flex gap-1 items-center text-white ">
           <span>
@@ -26,12 +26,12 @@ export default function LocationCard() {
         </p>
       </div>
       <video
-        className="h-full w-full object-cover object-left contrast-200 saturate-150 transition-all ease-in-out group-hover:scale-[1.5]"
+        className="h-full w-full object-cover object-left contrast-200 saturate-150 transition-all ease-in-out group-hover:scale-[1.5] duration-500"
         autoPlay
         loop
         muted
-        src="https://videos.pexels.com/video-files/16567078/16567078-hd_1920_1080_30fps.mp4"
-      ></video>
+        src="./assets/spain-video.mp4"
+      />
       <div
         className="absolute left-0 top-0 bottom-0 w-full backdrop-blur-[40px] bg-black/40 overflow-hidden rounded-[20px]"
         style={{
