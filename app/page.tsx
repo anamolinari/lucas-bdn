@@ -107,11 +107,14 @@ export default function Home() {
                 </span>
               </a>{" "}
               ,{" "}
-              <a href="/playground" className="text-primary sm:text-secondary">
+              <a
+                href="/playground"
+                className="text-primary underline hover:text-blue sm:text-secondary"
+              >
                 Design Engineer
               </a>{" "}
               and{" "}
-              <span className="text-primary underline hover:text-blue sm:text-secondary">
+              <span className="text-primary  sm:text-secondary">
                 Design Ops
               </span>
               . My work spans from startups to big companies, offering a rich
