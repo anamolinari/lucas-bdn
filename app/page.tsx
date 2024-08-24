@@ -111,7 +111,9 @@ export default function Home() {
                 Design Engineer
               </a>{" "}
               and{" "}
-              <span className="text-primary sm:text-secondary">Design Ops</span>
+              <span className="text-primary underline hover:text-blue sm:text-secondary">
+                Design Ops
+              </span>
               . My work spans from startups to big companies, offering a rich
               perspective on diverse design needs.
             </div>
