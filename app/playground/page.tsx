@@ -14,9 +14,7 @@ export default function Playground() {
     <div className="flex flex-col gap-6 pb-10">
       <FadeInWhenVisible delay={0}>
         <section className="flex flex-col gap-6">
-          <h2 className="mt-10 text-base leading-6 text-primary">
-            Experiments
-          </h2>
+          <h2 className="mt-10 text-base leading-6 text-primary">Playground</h2>
           <div className="text-sm leading-5 text-secondary space-y-2">
             This is a compilation of various designs, explorations, rejected
             versions, and any other content that I haven't had the opportunity
