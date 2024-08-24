@@ -107,9 +107,9 @@ export default function Home() {
                 </span>
               </a>{" "}
               ,{" "}
-              <span className="text-primary sm:text-secondary">
+              <a href="/playground" className="text-primary sm:text-secondary">
                 Design Engineer
-              </span>{" "}
+              </a>{" "}
               and{" "}
               <span className="text-primary sm:text-secondary">Design Ops</span>
               . My work spans from startups to big companies, offering a rich
