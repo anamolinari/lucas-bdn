@@ -6,6 +6,7 @@ import CardsTest from "./playground-components/animated-card/CardsTest";
 import FileDrop from "./playground-components/file-drop/FileDrop";
 import ItemDescription from "./playground-components/item-description";
 import NavBarTest from "./playground-components/nav-bar-playground/NavBarTest";
+import AnimatedText from "./playground-components/random-ones/AnimatedText";
 import AudioSlider from "./playground-components/random-ones/AudioSlider";
 import LocationCard from "./playground-components/random-ones/LocationCard";
 
@@ -21,6 +22,21 @@ export default function Playground() {
             projects I've created while experimenting with these powerful
             technologies.
           </div>
+        </section>
+      </FadeInWhenVisible>
+
+      <FadeInWhenVisible delay={0.2}>
+        <section className="flex flex-col gap-6 mt-4">
+          <div className="w-full aspect-video rounded-xl border border-[#1D1F1E]/10 bg-black bg-cover overflow-hidden">
+            <span className="flex w-full h-full items-center justify-center">
+              <AnimatedText />
+            </span>
+          </div>
+          <ItemDescription
+            title="Text Clipping Mask"
+            description="Experimenting with text clip mask. Trying to recreate standard effects from After Effects with code."
+            badges={["Next.js", "Tailwind CSS", "Framer Motion"]}
+          />
         </section>
       </FadeInWhenVisible>
 

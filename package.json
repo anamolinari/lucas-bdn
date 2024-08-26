@@ -10,6 +10,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@heroicons/react": "^2.1.5",
     "@radix-ui/react-aspect-ratio": "^1.1.0",
     "@radix-ui/react-popover": "^1.1.1",
     "framer-motion": "^11.3.28",
