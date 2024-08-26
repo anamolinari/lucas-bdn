@@ -16,16 +16,17 @@ export default function Playground() {
         <section className="flex flex-col gap-6">
           <h2 className="mt-10 text-base leading-6 text-primary">Playground</h2>
           <div className="text-sm leading-5 text-secondary space-y-2">
-            This is a compilation of various designs, explorations, rejected
-            versions, and any other content that I haven't had the opportunity
-            to showcase elsewhere.
+            Next.js, Tailwind CSS, and Framer Motion are my go-to tools for
+            transforming designs into reality. This space showcases the exciting
+            projects I've created while experimenting with these powerful
+            technologies.
           </div>
         </section>
       </FadeInWhenVisible>
 
       <FadeInWhenVisible delay={0.2}>
         <section className="flex flex-col gap-6 mt-4">
-          <div className="w-full aspect-video rounded-xl border border-[#1D1F1E]/10 bg-neutral-100 hover:bg-neutral-200/30 transition-colors duration-500 overflow-hidden">
+          <div className="w-full aspect-video rounded-xl border border-[#1D1F1E]/10 bg-neutral-100 hover:bg-neutral-200 transition-colors duration-500 overflow-hidden">
             <span className="flex w-full h-full items-center justify-center">
               <FileDrop />
             </span>
