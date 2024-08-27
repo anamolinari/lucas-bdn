@@ -76,7 +76,7 @@ export function TeamBadge({
   if (hasBackground) {
     return (
       <span
-        className={`inline-flex -ml-2 items-center justify-center h-8 w-8 rounded-full bg-white shadow-[0px_0px_4px_0px_rgba(0,0,0,0.40)] ${zIndexClass}`}
+        className={`relative inline-flex -ml-2 items-center justify-center h-8 w-8 rounded-full bg-white shadow-[0px_0px_4px_0px_rgba(0,0,0,0.40)] ${zIndexClass}`}
       >
         <Image src={src} alt={alt} width={20} height={20} />
       </span>
@@ -84,7 +84,9 @@ export function TeamBadge({
   }
 
   return (
-    <div className={`flex items-center justify-center h-8 w-8 ${zIndexClass}`}>
+    <div
+      className={`relative flex items-center justify-center h-8 w-8 ${zIndexClass}`}
+    >
       <Image src={src} alt={alt} width={32} height={32} />
     </div>
   );

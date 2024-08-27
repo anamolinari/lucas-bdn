@@ -106,24 +106,32 @@ export default function FantasyCard() {
           >
             Up Next
           </motion.p>
-          <TeamBadge
-            hasBackground={true}
-            src="/assets/playground/arsenal.png"
-            alt="arsenal"
-            zIndex={30}
-          />
-          <TeamBadge
-            hasBackground={true}
-            src="/assets/playground/brentford.png"
-            alt="brentford"
-            zIndex={20}
-          />
-          <TeamBadge
-            hasBackground={true}
-            src="/assets/playground/united.png"
-            alt="united"
-            zIndex={10}
-          />
+          <motion.div className="relative">
+            <span className="z-30 relative">
+              <TeamBadge
+                hasBackground={true}
+                src="/assets/playground/arsenal.png"
+                alt="arsenal"
+                zIndex={30}
+              />
+            </span>
+            <span className="z-20 relative">
+              <TeamBadge
+                hasBackground={true}
+                src="/assets/playground/brentford.png"
+                alt="brentford"
+                zIndex={20}
+              />
+            </span>
+            <span className="z-10 relative">
+              <TeamBadge
+                hasBackground={true}
+                src="/assets/playground/united.png"
+                alt="united"
+                zIndex={10}
+              />
+            </span>
+          </motion.div>
         </motion.div>
       </div>
       {/* Table */}
