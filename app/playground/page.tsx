@@ -8,6 +8,7 @@ import ItemDescription from "../components/playground-components/item-descriptio
 import NavBarTest from "../components/playground-components/nav-bar-playground/NavBarTest";
 import AnimatedText from "../components/playground-components/random-ones/AnimatedText";
 import AudioSlider from "../components/playground-components/random-ones/AudioSlider";
+import CardParallax from "../components/playground-components/random-ones/CardParallax";
 import LocationCard from "../components/playground-components/random-ones/LocationCard";
 
 export default function Playground() {

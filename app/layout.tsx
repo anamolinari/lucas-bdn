@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+
 import React, { ReactNode } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -5,6 +7,32 @@ import { NavBar } from "./components/NavBar";
 import { ThemeProvider } from "./context/ThemeContext";
 import "./globals.css";
 import { ScrollToTop } from "./components/ScrollToTop";
+
+export const metadata: Metadata = {
+  title: "Lucas Bordignon",
+  description: "Designer with focus on beautiful experiences.",
+  openGraph: {
+    title: "Lucas Bordignon",
+    description: "Designer with focus on beautiful experiences.",
+    url: "https://www.bordignon.co/",
+    siteName: "Lucas Bordignon",
+    images: [
+      {
+        url: "https://www.bordignon.co/og-image.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lucas Bordignon",
+    description: "Designer with focus on beautiful experiences.",
+    images: ["https://www.bordignon.co/og-image.jpg"],
+  },
+};
 
 interface LayoutProps {
   children: ReactNode;
