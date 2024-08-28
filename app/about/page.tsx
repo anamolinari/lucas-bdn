@@ -106,7 +106,7 @@ const inspirations: MusicAndInspirationItem[] = [
     image: "/assets/music-inspiration/people-ya.png",
     name: "Yã Izidoro",
     text: "Visual Designer",
-    url: "https://yaizidoro.framer.ai/",
+    url: "https://yaizidoro.com/",
     imageRounded: "rounded-full",
   },
 
