@@ -7,6 +7,7 @@ import { NavBar } from "./components/NavBar";
 import { ThemeProvider } from "./context/ThemeContext";
 import "./globals.css";
 import { ScrollToTop } from "./components/ScrollToTop";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Lucas Bordignon",
