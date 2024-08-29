@@ -52,7 +52,10 @@ export default function Layout({ children }: LayoutProps) {
           <Header />
           <NavBar />
           <ScrollToTop />
-          <main>{children}</main>
+          <main>
+            {children}
+            <Analytics />
+          </main>
           <Footer />
         </ThemeProvider>
       </body>
