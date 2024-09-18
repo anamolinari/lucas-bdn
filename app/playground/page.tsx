@@ -2,6 +2,7 @@
 
 import Badge from "../components/Badge";
 import { FadeInWhenVisible } from "../components/FadeInWhenVisible";
+import F1Live from "../components/playground-components/f1-live/page";
 import FantasyCard from "../components/playground-components/fantasy/FantasyCard";
 import FileDrop from "../components/playground-components/file-drop/FileDrop";
 import ItemDescription from "../components/playground-components/item-description";
@@ -14,7 +15,7 @@ import SuccessButton from "../components/playground-components/success-button/Su
 
 export default function Playground() {
   return (
-    <div className="flex flex-col gap-6 pb-10">
+    <div className="flex flex-col gap-6 pb-10 antialiased">
       <FadeInWhenVisible delay={0}>
         <section className="flex flex-col gap-6">
           <h2 className="mt-10 text-base leading-6 text-primary">Playground</h2>
@@ -40,6 +41,21 @@ export default function Playground() {
             </a>
             .
           </div>
+        </section>
+      </FadeInWhenVisible>
+
+      <FadeInWhenVisible delay={0.2}>
+        <section className="flex flex-col gap-6 mt-4">
+          <div className="w-full aspect-[4/3] rounded-xl border border-[#1D1F1E]/10 bg-neutral-950 bg-cover overflow-hidden">
+            <span className="flex w-full h-full items-center justify-center py-10">
+              <F1Live />
+            </span>
+          </div>
+          <ItemDescription
+            title="F1 Live Activity"
+            description="Recreation of Apple's F1 live activity concept shared on WWDC23."
+            badges={["Next.js", "Tailwind CSS", "Framer Motion"]}
+          />
         </section>
       </FadeInWhenVisible>
 
@@ -113,7 +129,7 @@ export default function Playground() {
           <ItemDescription
             title="Progressive Blur"
             description="Playing around with CSS masks and background blur. I also applied various CSS filters to the video."
-            badges={["Next.js", "Tailwind CSS"]}
+            badges={["React", "CSS"]}
           />
         </section>
       </FadeInWhenVisible>
@@ -143,7 +159,7 @@ export default function Playground() {
           <ItemDescription
             title="Floating Navbar"
             description="Simple navbar I created to work on the logic of only having one item active at a time."
-            badges={["Tailwind CSS"]}
+            badges={["React", "Tailwind CSS"]}
           />
         </section>
       </FadeInWhenVisible>

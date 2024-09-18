@@ -86,15 +86,6 @@ export function NavBar() {
         active={false}
         label="Email me"
       />
-
-      <button
-        onClick={toggleTheme}
-        className="relative p-2"
-        aria-label="Switch Theme"
-      >
-        <IconTheme />
-        <span className={tooltipClasses}>Switch Theme</span>
-      </button>
     </div>
   );
 }

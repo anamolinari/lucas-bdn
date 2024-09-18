@@ -48,16 +48,14 @@ export default function Layout({ children }: LayoutProps) {
         <link rel="icon" href="/assets/images/profile.png" type="image/png" />
       </head>
       <body className="flex flex-col max-w-[544px] min-h-dvh m-auto text-base text-primary bg-background overflow-x-hidden sm:px-5">
-        <ThemeProvider>
-          <Header />
-          <NavBar />
-          <ScrollToTop />
-          <main>
-            {children}
-            <Analytics />
-          </main>
-          <Footer />
-        </ThemeProvider>
+        <Header />
+        <NavBar />
+        <ScrollToTop />
+        <main>
+          {children}
+          <Analytics />
+        </main>
+        <Footer />
       </body>
     </html>
   );

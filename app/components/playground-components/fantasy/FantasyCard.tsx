@@ -2,8 +2,10 @@
 
 import Image from "next/image";
 import * as React from "react";
+import { useRef } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import { Results, TeamBadge, TeamLine } from "./FantasyComp";
+import { useOnClickOutside } from "usehooks-ts";
 
 const containerVariants = {
   closed: { width: "300px", height: "48px" },
@@ -17,11 +19,14 @@ const imageVariants = {
 
 export default function FantasyCard() {
   const [isOpen, setIsOpen] = React.useState(false);
+  const ref = useRef(null);
+  useOnClickOutside(ref, () => setIsOpen(false));
 
   return (
     // Main Container
     <motion.div
       className="flex flex-col bg-black rounded-3xl font-sans cursor-pointer p-2 overflow-hidden"
+      ref={ref}
       variants={containerVariants}
       animate={isOpen ? "open" : "closed"}
       transition={{

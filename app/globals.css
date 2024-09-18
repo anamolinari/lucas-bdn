@@ -11,27 +11,14 @@
 }
 
 :root {
-  --primary-color: #1d1f1e;
-  --secondary-color: #868684;
-  --blue-color: #3250ec;
-  --green-color: #6cdd50;
-  --red-color: #e33024;
-  --background-color: #efeeeb;
-  --button-color: #1d1f1e;
-  --card-color: #f8f7f3;
-  --subtle-color: #e9e7e2;
-  --line-color: #d7d7d3;
-}
-
-.dark {
   --primary-color: #efeeeb;
   --secondary-color: #c1c1be;
-  --blue-color: #3250ec;
+  --blue-color: #0588F0;
   --green-color: #6cdd50;
   --red-color: #e33024;
   --background-color: #1d1f1e;
   --button-color: #efeeeb;
-  --card-color: #2c2b2a;
+  --card-color: #272826;
   --subtle-color: #2c2b2a;
   --line-color: #41403f;
 }

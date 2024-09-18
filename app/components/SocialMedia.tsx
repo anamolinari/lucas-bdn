@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { InstagramIcon, SpotifyIcon, TwitterIcon } from "./Icons";
+import { GithubIcon, InstagramIcon, SpotifyIcon, TwitterIcon } from "./Icons";
 
 interface SocialMediaProps {
   text: string;
@@ -20,6 +20,12 @@ const SocialMediaData: SocialMediaProps[] = [
     url: "https://x.com/Lucas_bordignon",
     icon: <TwitterIcon />,
     name: "Twitter/X",
+  },
+  {
+    text: "My projects on",
+    url: "https://github.com/lucasbordignon0",
+    icon: <GithubIcon />,
+    name: "Github",
   },
   {
     text: "My photography on",
