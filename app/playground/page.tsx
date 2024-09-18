@@ -10,6 +10,7 @@ import AnimatedText from "../components/playground-components/random-ones/Animat
 import AudioSlider from "../components/playground-components/random-ones/AudioSlider";
 import CardParallax from "../components/playground-components/random-ones/CardParallax";
 import LocationCard from "../components/playground-components/random-ones/LocationCard";
+import SuccessButton from "../components/playground-components/success-button/SuccessButton";
 
 export default function Playground() {
   return (
@@ -21,8 +22,39 @@ export default function Playground() {
             Next.js, Tailwind CSS, and Framer Motion are my go-to tools for
             transforming designs into reality. This space showcases the exciting
             projects I've created while experimenting with these powerful
-            technologies.
+            technologies. More motion projects can be found{" "}
+            <a
+              href="https://motion-elements-eta.vercel.app/"
+              target="_blank"
+              className="text-primary underline hover:text-blue cursor-pointer"
+            >
+              here
+            </a>{" "}
+            , or you can check them all out on my{" "}
+            <a
+              href="https://github.com/lucasbordignon0"
+              target="_blank"
+              className="text-primary underline hover:text-blue cursor-pointer"
+            >
+              Github
+            </a>
+            .
           </div>
+        </section>
+      </FadeInWhenVisible>
+
+      <FadeInWhenVisible delay={0.2}>
+        <section className="flex flex-col gap-6 mt-4">
+          <div className="w-full aspect-[4/3] rounded-xl border border-[#1D1F1E]/10 bg-neutral-950 bg-cover overflow-hidden">
+            <span className="flex w-full h-full items-center justify-center py-10">
+              <SuccessButton />
+            </span>
+          </div>
+          <ItemDescription
+            title="Success Button"
+            description="Button with multiple states to indicate loading and success."
+            badges={["Next.js", "Tailwind CSS", "Framer Motion"]}
+          />
         </section>
       </FadeInWhenVisible>
 
