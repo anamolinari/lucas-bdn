@@ -13,7 +13,7 @@ export default function F1Live() {
   return (
     <div className="flex items-center justify-center w-full h-dvh bg-[#B2B2B2] antialiased">
       <div className="relative flex w-[380px] h-[200px] justify-center">
-        <span className="absolute left-1/2 -top-2 -translate-x-1/2">
+        <span className="absolute left-1/2 -top-2 -translate-x-1/2 sm:hidden">
           <Phone />
         </span>
         <AnimatePresence initial={false}>

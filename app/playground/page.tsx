@@ -90,7 +90,7 @@ export default function Playground() {
       </FadeInWhenVisible>
 
       <FadeInWhenVisible delay={0.2}>
-        <section className="flex flex-col gap-6 mt-4">
+        <section className="flex flex-col gap-6 mt-4 sm:hidden">
           <div className="w-full aspect-video rounded-xl border border-[#1D1F1E]/10 bg-black bg-cover overflow-hidden">
             <span className="flex w-full h-full items-center justify-center">
               <AnimatedText />
@@ -105,7 +105,7 @@ export default function Playground() {
       </FadeInWhenVisible>
 
       <FadeInWhenVisible delay={0.2}>
-        <section className="flex flex-col gap-6 mt-4">
+        <section className="flex flex-col gap-6 mt-4 sm:hidden">
           <div className="w-full aspect-video rounded-xl border border-[#1D1F1E]/10 bg-neutral-100 hover:bg-neutral-200 transition-colors duration-500 overflow-hidden">
             <span className="flex w-full h-full items-center justify-center">
               <FileDrop />
@@ -120,7 +120,7 @@ export default function Playground() {
       </FadeInWhenVisible>
 
       <FadeInWhenVisible delay={0.2}>
-        <section className="flex flex-col gap-6 mt-4">
+        <section className="flex flex-col gap-6 mt-4 sm:hidden">
           <div className="w-full aspect-video rounded-xl border border-[#1D1F1E]/10 bg-white overflow-hidden">
             <span className="flex w-full h-full p-3 items-center justify-center">
               <LocationCard />
@@ -135,7 +135,7 @@ export default function Playground() {
       </FadeInWhenVisible>
 
       <FadeInWhenVisible delay={0.2}>
-        <section className="flex flex-col gap-6 mt-4">
+        <section className="flex flex-col gap-6 mt-4 sm:hidden">
           <div className="w-full aspect-video rounded-xl border border-[#1D1F1E]/10 bg-black overflow-hidden">
             <span className="flex w-full h-full p-3 items-center justify-center">
               <AudioSlider />
