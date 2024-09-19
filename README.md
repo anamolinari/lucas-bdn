@@ -18,7 +18,7 @@ It was an excellent opportunity to practice and apply my knowledge of Next.js an
 - Navigate through different sections to view projects and learn about Lucas Bordignon's skills and experience.
 - The portfolio features a clean and visually appealing design, with a layout created in Figma and implemented with Next.js.
 - Animations have been used to improve interaction and engagement, providing a smooth and enjoyable navigation experience.
-- The portfolio is designed to be fully responsive, ensuring a consistent experience across various devices and screen sizes.
+- The portfolio is designed with a mobile-first approach and is fully responsive, ensuring a consistent experience across various devices and screen sizes.
 
 ## Tools used
 
