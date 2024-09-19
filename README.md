@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">Bordignon&Co</h1>
 
-## Getting Started
+<p align="center">
+Project developed to showcase Lucas Bordignon's work as a Product Designer.
+    
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Project description
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="justify">
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project is a personal portfolio created for Lucas Bordignon, aimed at showcasing his work and expertise as a Product Designer. The layout was designed using Figma, and the project was developed by me using technologies such as Next.js, Radix, and animations to provide an engaging user experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+It was an excellent opportunity to practice and apply my knowledge of Next.js and Radix, resulting in a final product that demonstrates both design and development skills.
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- Navigate through different sections to view projects and learn about Lucas Bordignon's skills and experience.
+- The portfolio features a clean and visually appealing design, with a layout created in Figma and implemented with Next.js.
+- Animations have been used to improve interaction and engagement, providing a smooth and enjoyable navigation experience.
+- The portfolio is designed to be fully responsive, ensuring a consistent experience across various devices and screen sizes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tools used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Figma
+- Next.js
+- Radix
+- React JS
+- Tailwind
+- Framer Motion
 
-## Deploy on Vercel
+###
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project access
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To access the project's source code, please [click here](https://www.bordignon.co/).
+
+## Developer
+[Ana Molinari](https://www.linkedin.com/in/anahmolinari/)
