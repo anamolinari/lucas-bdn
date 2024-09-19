@@ -4,7 +4,7 @@
 Project developed to showcase Lucas Bordignon's work as a Product Designer.
     
 <div align="center">
-    <img src="https://i.imgur.com/nDNX9Jb.pngf">
+    <img src="https://i.imgur.com/nDNX9Jb.pngf" width="800">
 </div>
 
 ## Project description
