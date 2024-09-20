@@ -7,7 +7,7 @@ Project developed to showcase Lucas Bordignon's work as a Product Designer.
     <img src="https://i.imgur.com/nDNX9Jb.pngf" width="800">
 </div>
 
-## Project description
+## Project Description
 
 <p align="justify">
 
@@ -22,20 +22,21 @@ It was an excellent opportunity to practice and apply my knowledge of Next.js an
 - Animations have been used to improve interaction and engagement, providing a smooth and enjoyable navigation experience.
 - The portfolio is designed with a mobile-first approach and is fully responsive, ensuring a consistent experience across various devices and screen sizes.
 
-## Tools used
+## Tools Used
 
 - Figma
 - Next.js
 - Radix
-- React JS
+- React.js
 - Tailwind
 - Framer Motion
 
 ###
 
-## Project access
+## Project Access
 
 To access the project's source code, please [click here](https://www.bordignon.co/).
 
 ## Developer
-[Ana Molinari](https://www.linkedin.com/in/anahmolinari/)
+[Ana Molinari](https://www.linkedin.com/in/anahmolinari/) and 
+[Lucas Bordignon](https://www.linkedin.com/in/bordignonlucas/)
