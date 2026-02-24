@@ -10,8 +10,7 @@ Personal portfolio developed for Lucas Bordignon to showcase his work and expert
 </br>
 
 <div align="center">
-  <a href="https://www.bordignon.co/">Live Demo</a> · 
-  <a href="https://github.com/anamolinari/lucas-bdn">Source Code</a>
+  <a href="https://www.bordignon.co/" target="_blank">Live Demo</a>
 </div>
 
 ## About
