@@ -40,26 +40,6 @@ The layout was designed in Figma by Lucas Bordignon, and I was responsible for t
 
 ---
 
-## Getting Started
-
-```bash
-# Clone the repository
-git clone https://github.com/anamolinari/lucas-bdn.git
-
-# Navigate to the project folder
-cd lucas-bdn
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
----
-
 ## Developer
 Developed by [Ana Molinari](https://www.linkedin.com/in/anahmolinari/) · 
 Design by [Lucas Bordignon](https://www.linkedin.com/in/bordignonlucas/)
