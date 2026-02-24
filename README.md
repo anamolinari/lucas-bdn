@@ -1,42 +1,66 @@
 <h1 align="center">Bordignon&Co</h1>
 
 <p align="center">
-Project developed to showcase Lucas Bordignon's work as a Product Designer.
+Personal portfolio developed for Lucas Bordignon to showcase his work and expertise as a Product Designer.
     
 <div align="center">
     <img src="https://i.imgur.com/nDNX9Jb.pngf" width="800">
 </div>
 
-## Project Description
+</br>
 
-<p align="justify">
+<div align="center">
+  <a href="https://www.bordignon.co/">Live Demo</a> · 
+  <a href="https://github.com/anamolinari/lucas-bdn">Source Code</a>
+</div>
 
-This project is a personal portfolio created for Lucas Bordignon, aimed at showcasing his work and expertise as a Product Designer. The layout was designed using Figma, and the project was developed by me using technologies such as Next.js, Radix, and animations to provide an engaging user experience.
+## About
 
-It was an excellent opportunity to practice and apply my knowledge of Next.js and Radix, resulting in a final product that demonstrates both design and development skills.
+The layout was designed in Figma by Lucas Bordignon, and I was responsible for the full development — faithfully translating the design into a responsive, animated, and production-ready web application.
+
+---
 
 ## Features
 
-- Navigate through different sections to view projects and learn about Lucas Bordignon's skills and experience.
-- The portfolio features a clean and visually appealing design, with a layout created in Figma and implemented with Next.js.
-- Animations have been used to improve interaction and engagement, providing a smooth and enjoyable navigation experience.
-- The portfolio is designed with a mobile-first approach and is fully responsive, ensuring a consistent experience across various devices and screen sizes.
+- Pixel-perfect implementation from a Figma design
+- Smooth animations and transitions with Framer Motion
+- Mobile-first, fully responsive layout
+- Accessible components built with Radix UI
+- Multi-section navigation with clean UX
 
-## Tools Used
+---
 
-- Figma
-- Next.js
-- Radix
+## Tech Stack
+
 - React.js
-- Tailwind
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Radix UI
 - Framer Motion
 
-###
+---
 
-## Project Access
+## Getting Started
 
-To access the project's source code, please [click here](https://www.bordignon.co/).
+```bash
+# Clone the repository
+git clone https://github.com/anamolinari/lucas-bdn.git
+
+# Navigate to the project folder
+cd lucas-bdn
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
 
 ## Developer
-[Ana Molinari](https://www.linkedin.com/in/anahmolinari/) and 
-[Lucas Bordignon](https://www.linkedin.com/in/bordignonlucas/)
+Developed by [Ana Molinari](https://www.linkedin.com/in/anahmolinari/) · 
+Design by [Lucas Bordignon](https://www.linkedin.com/in/bordignonlucas/)
