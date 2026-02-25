@@ -5,7 +5,9 @@ Personal portfolio developed for Lucas Bordignon to showcase his work and expert
 </p>
     
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/99922efd-9f81-48e2-872c-893857958a62" width="800"> 
+    <a href="https://www.bordignon.co/">
+        <img src="https://github.com/user-attachments/assets/99922efd-9f81-48e2-872c-893857958a62" width="800"> 
+    </a>
 </div>
 
 </br>
