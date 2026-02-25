@@ -2,9 +2,10 @@
 
 <p align="center">
 Personal portfolio developed for Lucas Bordignon to showcase his work and expertise as a Product Designer.
+</p>
     
 <div align="center">
-    <img src="https://s7.ezgif.com/tmp/ezgif-767ddbeef8a83aff.gif" width="800"> 
+    <img src="https://github.com/user-attachments/assets/99922efd-9f81-48e2-872c-893857958a62" width="800"> 
 </div>
 
 </br>
